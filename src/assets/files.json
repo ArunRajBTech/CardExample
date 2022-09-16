@@ -1,0 +1,31 @@
+{"data":[{
+    "id": 1,
+    "title": "Leanne Graham",
+    "content": "This the content and can add anything into this",
+    "image":"assets/img1.png"
+  },
+  {
+    "id": 2,
+    "title": "Ervin Howell",
+    "content": "This is the test content which is used to show to the client ",
+    "image":"assets/img2.png"
+  },
+  {
+    "id": 3,
+    "title": "Clementine Bauch",
+    "content": "Content is the information contained within communication media",
+    "image":"assets/img3.png"
+  },
+  {
+    "id": 4,
+    "title": "React",
+    "content": "React makes it painless to create interactive UIs.Design simple views for each state",
+    "image":"assets/img4.png"
+  },
+  {
+    "id": 5,
+    "title": "JS Script",
+    "content": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language",
+    "image":"assets/img5.png"
+  }
+]}
