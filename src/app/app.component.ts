@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {TestService} from './test.service';
 import{select, Store} from '@ngrx/store'
+
 import {Item} from '../models/item.model'
-import { Observable } from 'rxjs';
 import { invokeItemAPI } from 'src/store/item.action';
 import { itemData } from 'src/store/item.selector';
 
@@ -13,11 +12,11 @@ import { itemData } from 'src/store/item.selector';
 })
 export class AppComponent implements OnInit {
   title = 'samplecardexample';
-  sampleData = this.store.pipe(select(itemData));
+  sampleData$ = this._store.pipe(select(itemData));
 
-  constructor(private store: Store<{item:Item[]}>) { }
+  constructor(private readonly _store: Store<{item:Item[]}>) { }
 
-  ngOnInit(){
-    this.store.dispatch(invokeItemAPI());
+  public ngOnInit():void{
+    this._store.dispatch(invokeItemAPI());
   }
 }

@@ -1,5 +1,7 @@
-import {createReducer, on} from '@ngrx/store';
+import {createReducer, on, Action} from '@ngrx/store';
+
 import {Item} from '../models/item.model'
+import { AppState } from './app.state';
 import { retrieveItem } from './item.action';
 
 export const initialState:Item[]=[];
@@ -11,6 +13,6 @@ on(retrieveItem,(state,{allItem})=>{
 })
 );
 
-export function itemReducer(state:any,actions:any){
+export function itemReducer(state:Item[] | undefined,actions:Action){
     return _itemReducer(state,actions)
 }
