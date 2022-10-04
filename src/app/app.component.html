@@ -1,5 +1,5 @@
 <div class="container" style="width: 700px;margin-top: 5rem;">
-<div *ngFor="let data of sampleData">
+<div *ngFor="let data of sampleData | async">
   <mat-card class="example-card doc-hover">
     <div style="text-align: center;margin-bottom:.1rem;" ><img mat-card-avatar src={{data.image}}/></div>
   <mat-card-header>

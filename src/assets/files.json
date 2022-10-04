@@ -1,4 +1,4 @@
-{"data":[{
+[{
     "id": 1,
     "title": "Leanne Graham",
     "content": "This the content and can add anything into this",
@@ -28,4 +28,4 @@
     "content": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language",
     "image":"assets/img5.png"
   }
-]}
+]
