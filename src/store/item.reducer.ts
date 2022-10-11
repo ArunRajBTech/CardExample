@@ -1,7 +1,6 @@
 import {createReducer, on, Action} from '@ngrx/store';
 
 import {Item} from '../models/item.model'
-import { AppState } from './app.state';
 import { retrieveItem } from './item.action';
 
 export const initialState:Item[]=[];
